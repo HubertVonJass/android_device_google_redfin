@@ -27,7 +27,7 @@ else
   # Testing related defines
   #BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/r3-setup.sh
 
-  -include vendor/google_devices/redfin/proprietary/BoardConfigVendor.mk
+  -include vendor/google/redfin/proprietary/BoardConfigVendor.mk
 endif
 
-include device/google/redfin/BoardConfigLineage.mk
+include device/google/redfin/BoardConfigEvolution.mk

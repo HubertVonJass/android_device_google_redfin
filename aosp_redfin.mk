@@ -25,7 +25,7 @@ endif
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_system.mk)
 
 # Enable mainline checking
-PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := strict
+#PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := strict
 
 #
 # All components inherited here go to system_ext image
@@ -46,7 +46,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 
 $(call inherit-product, device/google/redfin/device-redfin.mk)
-$(call inherit-product-if-exists, vendor/google_devices/redfin/proprietary/device-vendor.mk)
+$(call inherit-product-if-exists, vendor/google/redfin/proprietary/redfin-vendor.mk)
 $(call inherit-product-if-exists, vendor/google_devices/redfin/prebuilts/device-vendor-redfin.mk)
 
 # Keep the VNDK APEX in /system partition for REL branches and Vendor Freeze targets
@@ -70,4 +70,4 @@ PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android
 PRODUCT_NAME := aosp_redfin
 PRODUCT_DEVICE := redfin
-PRODUCT_MODEL := AOSP on redfin
+PRODUCT_MODEL := Pixel 5
