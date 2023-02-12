@@ -1,20 +1,6 @@
 # device_google_redfin
 The Google Pixel 5 (codenamed _"redfin"_) is a flagship smartphone from Google announced on September 30, 2020 and release on October 15, 2020.
 
-To build the Evolution-X ROM, add this repo, device_google_redbull_13, kernel_device_redbull_13 and vendor_google_redfin_13 to the Evolution device tree. 
-There are a couple of changes in vendor_evolution_13 you need as well. 
-
-You also need to grab the following items from the LineageOS repo because they are missing from the Evolution repo:
-https://github.com/LineagOS/android_hardware_google_pixel; only the 'powershare' and 'touch' folders need to be moved into your tree.
-https://github.com/LineagOS/android_hardware_google_pixel-sepolicy; only the 'powershare' and 'touch' folders need to be moved into your tree.
-
-Replace the folders & contents downloaded from the Evolution-X repo with these from LineageOS:
-https://github.com/LineagOS/android_hardware_qcom_sm7250_display
-https://github.com/LineagOS/android_hardware_qcom_sm7250_media
-https://github.com/LineagOS/android_hardware_qcom_sm8150_display
-https://github.com/LineagOS/android_hardware_qcom_sm8150_media
-https://github.com/LineagOS/android_hardware_qcom_sm8150_data_ipacfg-mgr
-
 ## Device specifications
 
 | Device                  | Google Pixel 5                                                                                                       |
